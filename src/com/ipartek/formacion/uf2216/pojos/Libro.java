@@ -67,11 +67,11 @@ public class Libro implements Serializable {
 	public void setIsbn(Long isbn) {
 	    // Verificar si el ISBN es válido
 	    String isbnString = String.valueOf(isbn);
-	    if (isbnString.length() <= 10) {
+	    if (isbnString.length() == 10) {
 	        this.isbn = isbn;
 	    } else {
 	        // Lanzar una excepción o tomar alguna acción apropiada si el ISBN no es válido
-	        throw new IllegalArgumentException("El ISBN debe tener como máximo 10 dígitos.");
+	        throw new IllegalArgumentException("El ISBN debe tener exactamente 10 dígitos.");
 	    }
 	}
 

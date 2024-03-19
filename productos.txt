@@ -1,5 +1,0 @@
-id;nombre;precio;stock;disponible
-1;Producto1txt;1234.45;5;false
-2;Producto2txt;2345;2;true
-3;Producto3txt;3345;1;true
-4;koldo;123;77;false

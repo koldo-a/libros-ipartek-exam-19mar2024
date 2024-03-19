@@ -12,11 +12,11 @@ class DaoLibroArrayList implements DaoLibro {
 
 	// SINGLETON
 	private DaoLibroArrayList() {
-        libros.add(new Libro(1L, "Cien años de soledad", 978030547L, new BigDecimal("20.99"), 500, false));
-        libros.add(new Libro(2L, "El principito", 978881484L, new BigDecimal("15.50"), 150, false));
-        libros.add(new Libro(3L, "1984", 978045135L, new BigDecimal("18.75"), 320, true));
-        libros.add(new Libro(4L, "Orgullo y prejuicio", 978014518L, new BigDecimal("12.25"), 400, false));
-        libros.add(new Libro(5L, "Don Quijote de la Mancha", 978842143L, new BigDecimal("25.99"), 800, true));
+        libros.add(new Libro(1L, "Cien años de soledad", 9780307547L, new BigDecimal("20.99"), 500, false));
+        libros.add(new Libro(2L, "El principito", 9788817484L, new BigDecimal("15.50"), 150, false));
+        libros.add(new Libro(3L, "1984", 9780745135L, new BigDecimal("18.75"), 320, true));
+        libros.add(new Libro(4L, "Orgullo y prejuicio", 9780147518L, new BigDecimal("12.25"), 400, false));
+        libros.add(new Libro(5L, "Don Quijote de la Mancha", 9788742143L, new BigDecimal("25.99"), 800, true));
 
 	}
 
