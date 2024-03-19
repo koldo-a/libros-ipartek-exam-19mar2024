@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>88</x>
+      <y>0</y>
+      <w>660</w>
+      <h>605</h>
+    </coordinates>
+    <panel_attributes>com.ipartek.formacion.uf2216.pojos::Producto
+--
+-serialVersionUID = -6950379321811458669L: long
++NOMBRE_POR_DEFECTO = "PRODUCTO SIN DEFINIR": String
+#stockMinimo = 0: Integer
+-id: Long
+-nombre: String
+-precio: BigDecimal
+-stock: Integer
+-disponible: Boolean
+--
++Producto(Long id, String nombre, BigDecimal precio, Integer stock, Boolean disponible): ctor
++Producto(Producto producto): ctor
++Producto(String nombre, BigDecimal precio, Integer stock, Boolean disponible): ctor
++Producto(): ctor
++getId(): Long
++setId(Long id): void
++setId(String id): void
++getNombre(): String
++setNombre(String nombre): void
++getPrecio(): BigDecimal
++setPrecio(BigDecimal precio): void
++getStock(): Integer
++setStock(Integer stock): void
++getDisponible(): Boolean
++setDisponible(Boolean disponible): void
++getStockMinimo(): Integer
++setStockMinimo(Integer stockMinimo): void
++hashCode(): int
++equals(Object obj): boolean
++toString(): String
++clone(): Producto
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>11</y>
+      <w>429</w>
+      <h>319</h>
+    </coordinates>
+    <panel_attributes>com.ipartek.formacion.uf2216.pojos::Almacen
+--
+-productos = new ArrayList(): ArrayList&lt;Producto&gt;
+-id: Long
+-nombre: String
+-productoDestacado: Producto
+--
++Almacen(String nombre): ctor
++getProductos(): ArrayList&lt;Producto&gt;
++getId(): Long
++setId(Long id): void
++getNombre(): String
++setNombre(String nombre): void
++getProductoDestacado(): Producto
++setProductoDestacado(Producto productoDestacado): void
++agregarProducto(Producto producto): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>671</y>
+      <w>891</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>com.ipartek.formacion.uf2216.pojos::ProductoPerecedero
+--
+-serialVersionUID = 3261240510552464385L: long
+-TIEMPO_CADUCIDAD = Period.of(2, 0, 0): TemporalAmount
+-caducidad: LocalDate
+--
++ProductoPerecedero(Long id, String nombre, BigDecimal precio, Integer stock, Boolean disponible, LocalDate caducidad): ctor
++ProductoPerecedero(String nombre, BigDecimal precio, Integer stock, Boolean disponible, LocalDate caducidad): ctor
++ProductoPerecedero(): ctor
++getCaducidad(): LocalDate
++setCaducidad(LocalDate caducidad): void
++hashCode(): int
++equals(Object obj): boolean
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>594</y>
+      <w>33</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>
